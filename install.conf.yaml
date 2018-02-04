@@ -6,11 +6,13 @@
 - clean: ['~']
 
 - link:
-    ~/.dotfiles: ''
+    # ~/.dotfiles: ''
     ~/.config/qutebrowser:
         path: config/qutebrowser
     ~/.config/ranger:
         path: config/ranger
+    ~/.gnupg/gpg-agent.conf: gnupg/gpg-agent.conf
+    ~/.zshrc: zshrc
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
