@@ -1,0 +1,16 @@
+- defaults:
+    link:
+      relink: true
+      create: true
+
+- clean: ['~']
+
+- link:
+    ~/.dotfiles: ''
+    ~/.config/qutebrowser:
+        path: config/qutebrowser
+    ~/.config/ranger:
+        path: config/ranger
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
