@@ -7,11 +7,18 @@
 
 - link:
     # ~/.dotfiles: ''
+    ~/.gnupg/gpg-agent.conf: gnupg/gpg-agent.conf
+    ~/.config/awesome/autorun.sh:
+        path: config/awesome/autorun.sh
+    ~/.config/awesome/rc.lua:
+        path: config/awesome/rc.lua
+    ~/.config/awesome/themes/k-theme:
+        path: config/awesome/themes/k-theme
     ~/.config/qutebrowser:
         path: config/qutebrowser
     ~/.config/ranger:
         path: config/ranger
-    ~/.gnupg/gpg-agent.conf: gnupg/gpg-agent.conf
+    ~/.spacemacs: spacemacs
     ~/.zshrc: zshrc
 
 - shell:
