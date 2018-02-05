@@ -1,0 +1,25 @@
+# General
+#browser			"w3m %u"
+browser			"qutebrowser --target window %u"
+
+
+# Bindings
+bind-key		k up
+bind-key		j down
+bind-key		g home
+bind-key		G end
+
+
+# colors
+color background	color255 color0
+color listnormal	color255 color0
+color listfocus		color255 color88 bold
+color listnormal_unread	color255 color0 bold
+color listfocus_unread	color255 color88 bold
+color info		color255 color31
+color article		color255 color0
+
+
+# highlights
+highlight article "^(Feed|Title|Link|Date|Author):.*$" color31 color0
+highlight article "https?://[^ ]+" color9 color0 protect

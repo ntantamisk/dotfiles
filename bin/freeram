@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+free -m | grep Mem | cut -c40-44

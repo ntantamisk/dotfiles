@@ -14,10 +14,30 @@
         path: config/awesome/rc.lua
     ~/.config/awesome/themes/k-theme:
         path: config/awesome/themes/k-theme
+    ~/.config/nvim/init.vim:
+        path: config/nvim/init.vim
     ~/.config/qutebrowser:
         path: config/qutebrowser
     ~/.config/ranger:
         path: config/ranger
+    ~/.bash_profile: bash_profile
+    ~/.bashrc: bashrc
+    ~/bin:
+        path: bin
+    ~/.mutt/mutt-colors-solarized/mutt-colors-solarized-dark-256.muttrc:
+        path: mutt/mutt-colors-solarized/mutt-colors-solarized-dark-256.muttrc
+    ~/.mutt/aliases:
+        path: mutt/aliases
+    ~/.mutt/mailcap:
+        path: mutt/mailcap
+    ~/.mutt/muttrc:
+        path: mutt/muttrc
+    ~/.newsboat/config:
+        path: newsboat/config
+    ~/.newsboat/urls:
+        path: newsboat/urls
+    ~/.xinitrc: xinitrc
+    ~/.Xresources: Xresources
     ~/.spacemacs: spacemacs
     ~/.zshrc: zshrc
 
