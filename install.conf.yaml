@@ -32,6 +32,8 @@
         path: mutt/mailcap
     ~/.mutt/muttrc:
         path: mutt/muttrc
+    ~/.mutt/signatures:
+        path: mutt/signatures
     ~/.newsboat/config:
         path: newsboat/config
     ~/.newsboat/urls:
