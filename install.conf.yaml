@@ -24,8 +24,8 @@
     ~/.bashrc: bashrc
     ~/bin:
         path: bin
-    ~/.mutt/mutt-colors-solarized/mutt-colors-solarized-dark-256.muttrc:
-        path: mutt/mutt-colors-solarized/mutt-colors-solarized-dark-256.muttrc
+    ~/.mutt/mutt-colors-solarized:
+        path: mutt/mutt-colors-solarized
     ~/.mutt/aliases:
         path: mutt/aliases
     ~/.mutt/mailcap:
