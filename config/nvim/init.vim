@@ -22,6 +22,8 @@ if dein#load_state('/home/kostis/Git/Shougo')
   call dein#add('somini/vim-autoclose')
   call dein#add('yuttie/comfortable-motion.vim')
   call dein#add('tpope/vim-commentary')
+  call dein#add('scrooloose/nerdtree')
+  call dein#add('Xuyuanp/nerdtree-git-plugin')
 
   " You can specify revision/branch/tag.
   call dein#add('Shougo/deol.nvim', { 'rev': 'a1b5108fd' })
@@ -83,6 +85,24 @@ set nobackup
 set nowritebackup
 
 filetype plugin on
+
+let mapleader=","
+
+inoremap jj <Esc>
+nnoremap <C-n> :bnext<CR>
+nnoremap <C-p> :bprevious<CR>
+nnoremap <C-k> <C-w><C-k>
+nnoremap <C-j> <C-w><C-j>
+nnoremap <C-h> <C-w><C-h>
+nnoremap <C-l> <C-w><C-l>
+nnoremap <Leader>n :NERDTreeToggle<CR>
+
+set splitbelow
+set splitright
+
+set autochdir
+let NERDTreeChDirMode = 2
+let NERDTreeShowHidden = 1
 
 "---------- Check awesome rc file ----------
 

@@ -2,4 +2,4 @@
 
 This is my personal dotfiles for Arch Linux.
 
-Note: In need of a really good cleanup..
+Please note that all of them need a really good cleanup..
