@@ -24,6 +24,11 @@ if dein#load_state('/home/kostis/Git/Shougo')
   call dein#add('tpope/vim-commentary')
   call dein#add('scrooloose/nerdtree')
   call dein#add('Xuyuanp/nerdtree-git-plugin')
+  call dein#add('beloglazov/vim-online-thesaurus')
+  " call dein#add('mikewest/vimroom')
+  call dein#add('junegunn/goyo.vim')
+
+  call dein#add('christoomey/vim-tmux-navigator')
 
   " You can specify revision/branch/tag.
   call dein#add('Shougo/deol.nvim', { 'rev': 'a1b5108fd' })
@@ -89,12 +94,12 @@ filetype plugin on
 let mapleader=","
 
 inoremap jj <Esc>
-nnoremap <C-n> :bnext<CR>
-nnoremap <C-p> :bprevious<CR>
-nnoremap <C-k> <C-w><C-k>
-nnoremap <C-j> <C-w><C-j>
-nnoremap <C-h> <C-w><C-h>
-nnoremap <C-l> <C-w><C-l>
+" nnoremap <C-n> :bnext<CR>
+" nnoremap <C-p> :bprevious<CR>
+" nnoremap <C-k> <C-w><C-k>
+" nnoremap <C-j> <C-w><C-j>
+" nnoremap <C-h> <C-w><C-h>
+" nnoremap <C-l> <C-w><C-l>
 nnoremap <Leader>n :NERDTreeToggle<CR>
 
 set splitbelow
@@ -103,6 +108,31 @@ set splitright
 set autochdir
 let NERDTreeChDirMode = 2
 let NERDTreeShowHidden = 1
+
+let g:tmux_navigator_no_mappings = 1
+
+nnoremap <silent> {c-h} :TmuxNavigateLeft<cr>
+nnoremap <silent> {c-j} :TmuxNavigateDown<cr>
+nnoremap <silent> {c-k} :TmuxNavigateUp<cr>
+nnoremap <silent> {c-l} :TmuxNavigateRight<cr>
+" nnoremap <silent> {Previous-Mapping} :TmuxNavigatePrevious<cr>
+
+" Thesaurus mapping
+
+let g:online_thesaurus_map_keys = 0
+nnoremap <Leader>t :OnlineThesaurusCurrentWord<CR>
+
+" Goyo mapping and settings
+
+nnoremap <silent> <Leader>g :Goyo<CR>
+
+" Vimroom mapping and settings
+
+" nnoremap <silent> <Leader>r :VimroomToggle<CR>
+" let g:vimroom_ctermbackground = "black"
+" let g:vimroom_sidebar_height = 0
+" let g:vimroom_min_sidebar_width = 1
+" let g:vimroom_width = 80
 
 "---------- Check awesome rc file ----------
 

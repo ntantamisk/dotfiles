@@ -12,7 +12,9 @@ local theme = {}
 -- }}}
 
 -- {{{ Styles
-theme.font      = "sans 8"
+-- theme.font      = "sans 8"
+theme.font = "Inconsolata for Powerline 10"
+-- theme.font = "Cousine for Powerline 8"
 --theme.font      = "DejaVu Sans Mono for Powerline 8"
 
 -- {{{ Colors
