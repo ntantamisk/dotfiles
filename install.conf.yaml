@@ -38,6 +38,9 @@
         path: newsboat/config
     ~/.newsboat/urls:
         path: newsboat/urls
+    ~/.tmux:
+        path: tmux
+    ~/.tmux.conf: tmux.conf
     ~/.xinitrc: xinitrc
     ~/.Xresources: Xresources
     ~/.spacemacs: spacemacs
