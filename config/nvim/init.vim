@@ -140,5 +140,8 @@ autocmd BufWritePost $HOME/.config/awesome/rc.lua !awesome -k
 
 "---------- indentation/tabs/etc ----------
 
+set smartindent
+set expandtab
+set smarttab
 set ts=4 sw=4 et
 
