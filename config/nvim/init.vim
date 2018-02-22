@@ -19,14 +19,15 @@ if dein#load_state('/home/kostis/Git/Shougo')
   call dein#add('Shougo/neosnippet-snippets')
   call dein#add('Shougo/deoplete.nvim')
 
+  call dein#add('morhetz/gruvbox')
+
   call dein#add('somini/vim-autoclose')
   call dein#add('yuttie/comfortable-motion.vim')
   call dein#add('tpope/vim-commentary')
   call dein#add('scrooloose/nerdtree')
-  call dein#add('Xuyuanp/nerdtree-git-plugin')
-  call dein#add('beloglazov/vim-online-thesaurus')
-  " call dein#add('mikewest/vimroom')
-  call dein#add('junegunn/goyo.vim')
+  call dein#add('Xuyuanp/nerdtree-git-plugin')          " Leader-n
+  call dein#add('beloglazov/vim-online-thesaurus')      " Leader-t
+  call dein#add('junegunn/goyo.vim')                    " Leader-g
 
   call dein#add('christoomey/vim-tmux-navigator')
 
@@ -79,6 +80,14 @@ inoremap <expr><cr> pumvisible() ? "\<c-y>" : "\<CR>"
 
 "---------- Various settings ----------
 
+set termguicolors
+
+set background=dark
+let g:gruvbox_termcolors=256
+let g:gruvbox_italic=1
+let g:gruvbox_contrast_dark = 'hard'
+colorscheme gruvbox
+
 set number
 set relativenumber
 set cursorline
@@ -125,14 +134,6 @@ nnoremap <Leader>t :OnlineThesaurusCurrentWord<CR>
 " Goyo mapping and settings
 
 nnoremap <silent> <Leader>g :Goyo<CR>
-
-" Vimroom mapping and settings
-
-" nnoremap <silent> <Leader>r :VimroomToggle<CR>
-" let g:vimroom_ctermbackground = "black"
-" let g:vimroom_sidebar_height = 0
-" let g:vimroom_min_sidebar_width = 1
-" let g:vimroom_width = 80
 
 "---------- Check awesome rc file ----------
 
