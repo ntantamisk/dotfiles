@@ -28,10 +28,16 @@ auto_view text/html
 alternative_order text/plain text/enriched /text/html
 
 # Aliases settings -----------------------------------
-set alias_file = "~/.mutt/aliases"
-source ~/.mutt/aliases
-set query_command = "abook --mutt-query '%s'"
-macro editor ";" \Ct
+# Abook
+# set alias_file = "~/.mutt/aliases"
+# source ~/.mutt/aliases
+# set query_command = "abook --mutt-query '%s'"
+# macro editor ";" \Ct
+
+# GooBook
+set query_command = "goobook query '%s'"
+macro index,pager a "<pipe-message>goobook add<return>" "add sender to google contacts" 
+bind editor <Tab> complete-query
 
 # Status Bar -----------------------------------------
 set status_chars  = " *%A"
