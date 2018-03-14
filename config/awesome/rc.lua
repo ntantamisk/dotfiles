@@ -550,6 +550,8 @@ awful.rules.rules = {
 	  properties = { screen = 1, tag = "mail", switchtotag = true } }, 
 	{ rule = { instance = "emacs" },
 	  properties = { screen = 1, tag = "emacs" } }, 
+    { rule = { instance = "chromium" },
+      properties = { screen = 1,tag = "general" } },
 }
 -- }}}
 
