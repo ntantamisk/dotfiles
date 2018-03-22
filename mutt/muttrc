@@ -11,7 +11,6 @@ set postponed="imaps://imap.gmail.com/[Gmail]/Drafts"
 set header_cache = "~/.mutt/cache/headers"
 set message_cachedir = "~/.mutt/cache/bodies"
 set certificate_file = "~/.mutt/certificates"
-# set smtp_url = 'smtps://ntantamisk@gmail.com:***REMOVED***@smtp.gmail.com:465/'
 set smtp_url = 'smtps://ntantamisk@gmail.com@smtp.gmail.com:465/'
 # set smtp_pass = ''
 set smtp_pass = `gpg -d ~/.mutt/.pass.gpg | awk '$1 == "GMail:" {print $2}'`
